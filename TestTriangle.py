@@ -8,12 +8,14 @@ The primary goal of this file is to demonstrate a simple unittest implementation
 """
 
 import unittest
+from datetime import datetime
 
 from Triangle import classifyTriangle
 
 # This code implements the unit test functionality
 # https://docs.python.org/3/library/unittest.html has a nice description of the framework
 
+ 
 class TestTriangles(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
 
@@ -56,7 +58,16 @@ class TestTriangles(unittest.TestCase):
     def testInvalidInputE(self):
         self.assertEqual(classifyTriangle(1,2,15),'NotATriangle','1,2,15 should not be a triangle')  
 
+
+    
 if __name__ == '__main__':
     print('Running unit tests')
     unittest.main()
+    def my_brand(name):
+        print("=*=*=*= Khusboo Patel =*=*=*=")
+        print("=*=*=*= Course 2023S-SSW567-WS =*=*=*= ")
+        print("=*=*=*=",name,"=*=*=*= ")
+        print("=*=*=*=",datetime.now(), "=*=*=*= ")
 
+name="HW 02a - Testing a legacy program and reporting on testing results"
+my_brand(name)

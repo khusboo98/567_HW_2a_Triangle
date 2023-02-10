@@ -9,6 +9,15 @@ The primary goal of this file is to demonstrate a simple python program to class
 @author: rk
 """
 
+from datetime import datetime
+
+def my_brand(name):
+    print("=*=*=*= Khusboo Patel =*=*=*=")
+    print("=*=*=*= Course 2023S-SSW567-WS =*=*=*= ")
+    print("=*=*=*=",name,"=*=*=*= ")
+    print("=*=*=*=",datetime.now(), "=*=*=*= ")
+
+
 def classifyTriangle(a,b,c):
     """
     Your correct code goes here...  Fix the faulty logic below until the code passes all of 
@@ -26,7 +35,6 @@ def classifyTriangle(a,b,c):
       
       BEWARE: there may be a bug or two in this code
     """
-
     # require that the input values be >= 0 and <= 200
     if a > 200 or b > 200 or c > 200:
         return 'InvalidInput'
@@ -55,3 +63,9 @@ def classifyTriangle(a,b,c):
         return 'Scalene'
     else:
         return 'Isoceles'
+    
+
+
+name="HW 02a - Testing a legacy program and reporting on testing results"
+my_brand(name)
+
