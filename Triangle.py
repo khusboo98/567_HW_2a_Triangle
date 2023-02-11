@@ -9,13 +9,6 @@ The primary goal of this file is to demonstrate a simple python program to class
 @author: rk
 """
 
-from datetime import datetime
-
-def my_brand(name):
-    print("=*=*=*= Khusboo Patel =*=*=*=")
-    print("=*=*=*= Course 2023S-SSW567-WS =*=*=*= ")
-    print("=*=*=*=",name,"=*=*=*= ")
-    print("=*=*=*=",datetime.now(), "=*=*=*= ")
 
 
 def classifyTriangle(a,b,c):
@@ -65,7 +58,4 @@ def classifyTriangle(a,b,c):
         return 'Isoceles'
     
 
-
-name="HW 02a - Testing a legacy program and reporting on testing results"
-my_brand(name)
 
