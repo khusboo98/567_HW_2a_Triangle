@@ -8,7 +8,7 @@ The primary goal of this file is to demonstrate a simple unittest implementation
 """
 
 import unittest
-
+from datetime import datetime
 
 from Triangle import classifyTriangle
 
@@ -59,8 +59,18 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(1,2,15),'NotATriangle','1,2,15 should not be a triangle')  
 
 
-    
+def my_brand(name):
+    print("=*=*=*= Khusboo Patel =*=*=*=")
+    print("=*=*=*= Course 2023S-SSW567-WS =*=*=*= ")
+    print("=*=*=*=",name,"=*=*=*= ")
+    print("=*=*=*=",datetime.now(), "=*=*=*= ")
+
+
 if __name__ == '__main__':
     print('Running unit tests')
+    name="HW 02a - Testing a legacy program and reporting on testing results"
+    my_brand(name)
     unittest.main()
+    
+    
     
