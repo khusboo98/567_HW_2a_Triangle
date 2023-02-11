@@ -66,5 +66,3 @@ def my_brand(name):
 
 name="HW 02a - Testing a legacy program and reporting on testing results"
 my_brand(name)
-
-
